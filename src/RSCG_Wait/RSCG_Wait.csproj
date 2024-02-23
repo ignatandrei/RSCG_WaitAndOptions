@@ -23,13 +23,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="../../README.md" Pack="true" PackagePath="\" />
+		<None Include="../../readme.md" Pack="true" PackagePath="\" />
 		<None Include="../../docs/imgs/nuget.png" Pack="true" PackagePath="\" />
 		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
 		<None Include="../../readme.txt" pack="true" PackagePath="." />
 	</ItemGroup>
 	<PropertyGroup>
-		<Version>2023.12.19.1802</Version>
+		<Version>2024.2.23.1940</Version>
 		<Authors>Andrei Ignat</Authors>
 		<Description>This package wait for a time and put all global options into a cs file</Description>
 		<Title>RSCG Wait and Options</Title>
