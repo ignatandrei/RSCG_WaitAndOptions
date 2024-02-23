@@ -27,5 +27,6 @@ jobs:
     - name: Build
       run: | 
         cd src
+        dotnet tool restore
         dotnet r pack
     
