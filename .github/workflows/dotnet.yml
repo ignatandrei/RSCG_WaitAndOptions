@@ -29,8 +29,8 @@ jobs:
         cd src
         dotnet tool restore
         dotnet r pack
-  
+        ls 
     - name: push nuget
       run: |
-          dotnet nuget push ${{github.workspace}}/src/RSCG_WAIT/PACK/*symb*.*pkg --api-key  ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
+        dotnet nuget push ${{github.workspace}}/src/RSCG_Wait/PACK/*symb*.*pkg --api-key  ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
   
