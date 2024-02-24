@@ -8,17 +8,28 @@
 		
 	</PropertyGroup>
 	<ItemGroup>
-		<CompilerVisibleProperty Include="RSCG_Wait_Seconds"  />
+		<CompilerVisibleProperty Include="RSCG_Wait_Seconds" />
 	</ItemGroup>
 	<PropertyGroup>
 		<RSCG_Wait_Seconds>10</RSCG_Wait_Seconds>
 	</PropertyGroup>
+	<!--<ItemGroup>
+	  <PackageReference Include="RSCG_WaitAndOptions" Version="2024.2.24.1940" 
+						OutputItemType="Analyzer" ReferenceOutputAssembly="false" 
+						/>
+	</ItemGroup>-->
 	<ItemGroup>
-		<ProjectReference Include="..\RSCG_Wait\RSCG_Wait.csproj" OutputItemType="Analyzer"
-						ReferenceOutputAssembly="false"  />
+		<ProjectReference Include="..\RSCG_Wait\RSCG_Wait.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 	</ItemGroup>
 	<PropertyGroup>
 		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
 		<CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)\GX</CompilerGeneratedFilesOutputPath>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 	</PropertyGroup>
 </Project>
