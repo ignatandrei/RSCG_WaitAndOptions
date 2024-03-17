@@ -11,7 +11,7 @@
 		<CompilerVisibleProperty Include="RSCG_Wait_Seconds" />
 	</ItemGroup>
 	<PropertyGroup>
-		<RSCG_Wait_Seconds>10</RSCG_Wait_Seconds>
+		<RSCG_Wait_Seconds>1</RSCG_Wait_Seconds>
 	</PropertyGroup>
 	<!--<ItemGroup>
 	  <PackageReference Include="RSCG_WaitAndOptions" Version="2024.2.24.1940" 
